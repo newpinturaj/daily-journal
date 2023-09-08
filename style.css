@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Tangerine:wght@400;700&display=swap');
+
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+
+.header{
+    position: relative;
+    background: linear-gradient(rgba(59, 43, 235, 0.312), rgba(255, 255, 255, 0.397)), url("./image-header.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto ;
+}
+
+.header .navbar {
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+    /* position: static;
+    top: 0; */
+
+}
+
+.header .navbar h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(34, 34, 247, 0.573);
+    text-transform: capitalize;
+    padding: .25em .5em;
+    
+}
+
+.header .navbar .nav-items {
+    list-style: none;
+    display: flex;
+    /* border: 2px solid green; */
+}
+
+
+.header .navbar .item {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: .5em 1em;
+    /* border: 2px solid blueviolet; */
+    align-self: center;
+}
+
+.header .navbar .item a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+.header .header-content{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(34, 34, 247, 0.483);
+}
+
+.header .header-content h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-bottom: .2em;
+}
+
+.header .header-content p {
+    font-size: 3.5rem;
+    letter-spacing: 1.15px;
+    font-family: 'Tangerine', cursive;
+    
+}
+
+.header .header-content .author-name {
+    text-align: end;
+    margin-top: .5em;
+    font-family: 'Tangerine', cursive;
+    text-decoration-line: underline;
+
+    transform: translateX(-10%);
+}
+
+.header .header-content .author-name i {
+    font-size: .5em;
+}
+
+
+/********** to do section ************/
+
+.to-do-list{
+    background-color: rgba(14, 55, 236, 0.039);
+    padding: 10em 0;
+    /* min-height: 30vh; */
+}
+
+.to-do-list .add-new form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.to-do-list .add-new input{
+    flex-basis: 100%;
+    font-size: 2rem;
+    padding: 0.2em .5em;
+    border-radius: 10em;
+}
+
+.to-do-list .add-new button {
+    font-size: 2rem;
+    padding: 0.2em .5em;
+    border-radius: 10em;
+    border-color: lightgreen;
+    background-color: rgb(14, 126, 14);
+    color: #fff;
+    font-weight: 700;
+
+    width: 7.5em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-left: 1em;
+}
+
+.to-do-list .add-new button:hover {
+    background-color: rgb(2, 103, 2);
+}
+
+.to-do-list .recent-item{
+    margin-top: 7em;
+}
+
+.to-do-list .recent-item .item{
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.093);
+}
+
+.to-do-list .recent-item .item h1 {
+    font-size: 2rem;
+    color: green;
+    padding-right: 5px;
+    display: inline-block;
+    border-bottom: 3px solid green;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+    letter-spacing: 1.15px;
+    
+}
+
+.to-do-list .recent-item .item span {
+    font-size: 2rem;
+    padding-left: .5em;
+}
+
+.to-do-list .recent-item .item span a{
+    color: red;
+}
+
+.to-do-list .recent-item .item p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    text-align: justify;
+    padding-bottom: .5em;
+}
+
+
+/************ footer section ****************/
+
+.footer {
+    padding: 20px;
+    background-color: rgb(61, 61, 245);
+}
+
+.footer .social-media{
+    text-align: center;
+    color: #fff;
+}
+
+.footer .social-media i {
+    padding: 1em;
+    font-size: 2.5rem;
+}
+
+.footer .social-media p {
+    font-size: 1.2rem;
+}
